@@ -1,0 +1,20 @@
+// @mixin dislpay($align:center, $justify:space-between){
+//   display: flex;
+//   align-items: $align;
+//   justify-content: $justify;
+// }
+// @mixin textStyle($color:#303030, $fontSize:16px, $fontWeight:700, $lineHeight:normal){
+//   color: $color;
+//   font-size: $fontSize;
+//   font-style: normal;
+//   font-weight: $fontWeight;
+//   line-height: $lineHeight;
+// }
+
+// @mixin buttun(){
+//   @include textStyle($color:#fff, $lineHeight:18px);
+//   padding: 16px 32px;
+//   border-radius: 15px;
+//   background: #273895;
+//   text-align: center;
+// }

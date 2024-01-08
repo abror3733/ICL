@@ -1,0 +1,99 @@
+.site-header{
+padding-top: 56px
+}
+.header{
+  @include dislpay($align:start);
+}
+.header__wrapper{
+  @include dislpay($justify:start);
+  margin-bottom: 48px;
+}
+.header__logo-link{
+  display: inline-block;
+  margin-right: 64px;
+}
+.header__wrapper-content{
+  width: 270px;
+}
+
+.header__exit{
+  display: inline-block;
+  @include buttun();
+  margin-left: 36px;
+}
+.header__call-number{
+  @include textStyle();
+  display: inline-block;
+}
+
+
+.hamburgers{
+  display: flex;
+  gap: 15px;
+}
+
+.header__hamburger-mob-btn{
+  background: transparent;
+  border: none;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 7px;
+  background: linear-gradient(326deg, #2641D1 11.53%, #3333A3 74.32%);
+}
+.header__hamburger-btn{
+  background: transparent;
+  border: none;
+  display: block;
+  border-radius: 7px;
+  width: 50px;
+  height: 50px;
+  background: #DEE6EF;
+}
+.header__hamburger-btn{
+  display: none;
+}
+.header__hamburger-mob-btn{
+  display: none;
+}
+
+@media only screen and (max-width:863px){
+  .header__logo-link{
+    margin-right: 15px;
+  }
+  .header__exit{
+    @include buttun();
+    margin-left: 13px;
+  }
+}
+@media only screen and (max-width:813px){
+
+  .header__text{
+    display: none;
+  }
+}
+@media only screen and (max-width:781px){
+.navbar{
+  display: none;
+}
+.header__call-number{
+  display: none;
+}
+.header__exit{
+  display: none;
+}
+
+.header__wrapper{
+  margin-bottom: 0px;
+}
+.header{
+  @include dislpay();
+}
+.header__hamburger-btn{
+  display: block;
+}
+.header__hamburger-mob-btn{
+  display: block;
+}
+
+}
